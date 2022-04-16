@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ease Heart</title>
+	<script>
+		var selectedCategoryId = "About";
+		function load(){
+			
+		}
+		
+		function sendEmail(){
+			let appName = document.getElementById("appName").value
+			let subject = document.getElementById("subject").value
+			let message = document.getElementById("message").value
+			window.location.href = "mailto:" + "easeheart@yeah.net?subject=" + appName + "-" + subject + "&body=" + message
+		}
+	</script>
+	<style>
+		body{
+			background-color: antiquewhite;
+		}
+		.topNav{
+			align-content: center;
+/*			background-color: #919191;*/
+			
+		}
+		.line{
+			background-color: #1C1B1B;
+		}
+		#logol{
+			font-size: 40px;
+			font-style: oblique;
+			border-radius: 5px;
+			background-color: #727171
+		}
+		
+		#navigation{
+			background-color: rebeccapurple;
+			text-align: center;
+			height: 40px;
+		}
+		#navigation li{
+			list-style: none;
+			display: block;
+			float: left;
+		}
+		#navigation li a{
+			display: block;
+			width: 150px;
+			height: 40px;
+			text-decoration: none;
+			text-align: center;
+			align-self: center;
+			color:#000000;
+			font-size: 25px;
+		}
+		#navigation li a:hover{
+			background-color: #ACC0FA;
+		}
+		
+		.passage{
+			background-color: #ACC0FA;
+		}
+		.passage h1{
+			background-color: #6D6B6B;
+			text-align: center;
+		}
+		.passage h2{
+			text-indent: 40px;
+		}
+		.email{
+			text-align: center;
+			background-color: #E2E1E1;
+			font: bolder;
+			display: block;
+			width: 75%;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 10px;
+		}
+		
+		.email h3{
+			padding-left: 10px;
+			padding-top: 10px;
+			background-color: #828282;
+			border-radius: 10px 10px 0px 0px;
+		}
+		
+		.email span{
+			font-size: 18px;
+		}
+		
+		.email select{
+			width:200px;
+			height: 30px;
+			padding-left: 5px;
+			font-size: 16px;
+		}
+		
+		#subject{
+			width: 98%;
+			height: 30px;
+			margin: 10px auto 10px auto;
+		}
+		#message{
+			width: 98%;
+			height: 300px;
+		}
+		
+		#sendBtn{
+			align-self: center;
+			width: 180px;
+			height: 40px;
+			border-width: 0px;
+			border-radius: 10px;
+			background: #1E90FF;
+			font-size: 20px;
+			margin: 10px auto 10px auto;
+		}
+		.calculatorSelection{
+			text-align: left;
+			width: 98%;
+			margin: auto;
+		}
+	</style>
+</head>
+	
+<body onLoad="load()">
+	<div class="topNav">
+		<span id="logol">&nbsp;Ease Heart&nbsp;</span><br>
+		<hr>
+		<div id = "navigation">
+			<ul>
+				<li><a id="about" href="./index.html">About</a></li>
+				<li><a id="privacy" href="./privacy.html">Privacy</a></li>
+				<li><a id="contactUs" href = "./support.html">Contact Us</a></li>
+			</ul>
+		</div>		
+	</div>
+	<hr>
+	<div class="passage">
+		<section id="aboutPassage">
+			<h1>Contact Us</h1>
+			<h2>If you have any questions or suggestions, please email us. We will seriously consider your suggestions and deal with your problems as soon as possible.</h2>
+		</section>
+		<div class="email">
+		<h3>Send Email To Us</h3>
+		<div class="calculatorSelection">
+			<span>App</span><select id="appName" name="appName">
+				<option>Calculator</option>
+			</select><br>
+		</div>
+		<input id="subject" type= "text" placeholder="Subject">
+		<textarea id="message" placeholder="Email Message"></textarea>
+		<input id="sendBtn" type="button" onClick="sendEmail()" value="Send">
+		</div>
+		<br>
+	</div>
+	
+	
+</body>
+</html>

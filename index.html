@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ease Heart</title>
+	<script>
+		var selectedCategoryId = "About";
+		function load(){
+			
+		}
+	</script>
+	<style>
+		body{
+			background-color: antiquewhite;
+		}
+		.topNav{
+			align-content: center;
+/*			background-color: #919191;*/
+			
+		}
+		.line{
+			background-color: #1C1B1B;
+		}
+		#logol{
+			font-size: 40px;
+			font-style: oblique;
+			border-radius: 5px;
+			background-color: #727171
+		}
+		
+		#navigation{
+			background-color: rebeccapurple;
+			text-align: center;
+			height: 40px;
+		}
+		#navigation li{
+			list-style: none;
+			display: block;
+			float: left;
+		}
+		#navigation li a{
+			display: block;
+			width: 150px;
+			height: 40px;
+			text-decoration: none;
+			text-align: center;
+			color:#000000;
+			font-size: 25px;
+		}
+		#navigation li a:hover{
+			background-color: #ACC0FA;
+		}
+		
+		.passage{
+			background-color: #ACC0FA;
+		}
+		.passage h1{
+			background-color: #6D6B6B;
+			text-align: center;
+		}
+		.passage h2{
+			text-indent: 40px;
+		}
+	</style>
+</head>
+	
+<body onLoad="load()">
+	<div class="topNav">
+		<span id="logol">&nbsp;Ease Heart&nbsp;</span><br>
+		<hr>
+		<div id = "navigation">
+			<ul>
+				<li><a id="about" href="./index.html">About</a></li>
+				<li><a id="privacy" href="./privacy.html">Privacy</a></li>
+				<li><a id="contactUs" href = "./support.html">Contact Us</a></li>
+			</ul>
+		</div>		
+	</div>
+	<hr>
+	<div class="passage">
+		<section id="aboutPassage">
+			<h1>About</h1>
+			<h2>Easeheart was founded on April 10, 2022. We are committed to developing software that can make people's life easier and more convenient. We adhere to the principle of customer first and develop software that satisfies customers.</h2>
+		</section>
+	</div>
+</body>
+</html>
